@@ -1,0 +1,159 @@
+header{
+    font-size: 18px;
+    font-style: normal;
+    padding-left: 95px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+}
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
+}
+.section{
+    display: flex;
+}
+.container{
+    display: flex;
+    margin-bottom: 100px;
+}
+/* ............1st Part.............. */
+/* ...........DETAILS IN CSS.......... */
+
+h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+.half-width-one{
+    
+    width: 60%;
+    padding-left: 7.5%;
+}
+.half-width-one img{
+    width: 70%;
+    right: 10px;
+}
+
+/* ..........2ND PART-Popular Collection.......... */
+/* ...........DETAILS IN CSS.......... */
+
+.title{
+    text-align: center;
+}
+.collection-type{
+    display: grid;
+    margin-bottom: 20px;
+    width: 100px; 
+    grid-gap:30px;
+    grid-template-columns: repeat(3, 3fr);   
+}
+
+.collection{
+    display: grid;
+    line-height: 25px;
+    padding-left: 65px;
+}
+.collection img{
+    width: 250px;
+    display: block;
+    margin: 30px;
+}
+.collection-detail {
+    display:grid;
+    padding-left: 35px;
+    line-height: 5px;
+}
+.about{
+    padding-left: 35px;
+}
+.yellow-color{
+    color: yellow;
+}
+.Black-color{
+    color: black;
+}
+.fas{
+    padding-left: 1px;
+}
+.details{
+    display: inline;
+    align-items: center;
+}
+
+@media (max-width:992px){
+    .collection-type .half-width-one{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:668px){
+    .collection-type .half-width-one{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/* .........3RD PART........... */
+/* ...........DETAILS IN CSS.......... */
+
+.half-width-two{
+    text-align: justify;
+    width: 60%;
+    margin-right: 100px;
+}
+.half-width-two img{
+    width: 60%;
+    padding-left: 18%;
+}
+.link-button-one{
+    text-decoration:none;
+    font-size: 12px;
+    font-style: normal;
+    background-color: blue;
+    color: white;
+    line-height: 50px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.link-button-two{
+    text-decoration:none;
+    font-size: 12px;
+    font-style: normal;
+    background-color: blue;
+    color: white;
+    line-height: 50px;
+    padding: 10px 30px;
+}
+
+/* ............Footer.......... */
+/* ...........DETAILS IN CSS.......... */
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    line-height: 10px;
+}
+.fab{
+    color: white;
+    padding: 5px 5px 5px;
+}
+
+/* ............Media Quaries.......... */
+
+    @media only screen and (max-width:688px){
+        .container{
+            width: 100%;
+        }
+        .collection-type{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .collection{
+            flex-direction: column;
+    }
+}
