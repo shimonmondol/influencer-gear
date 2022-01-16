@@ -17,8 +17,8 @@ body{
     display: flex;
     margin-bottom: 100px;
 }
+
 /* ............1st Part.............. */
-/* ...........DETAILS IN CSS.......... */
 
 h1{
     font-size: 40px;
@@ -39,7 +39,6 @@ h2{
 }
 
 /* ..........2ND PART-Popular Collection.......... */
-/* ...........DETAILS IN CSS.......... */
 
 .title{
     text-align: center;
@@ -84,21 +83,10 @@ h2{
     align-items: center;
 }
 
-@media (max-width:992px){
-    .collection-type .half-width-one{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width:668px){
-    .collection-type .half-width-one{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 
 
 /* .........3RD PART........... */
-/* ...........DETAILS IN CSS.......... */
+
 
 .half-width-two{
     text-align: justify;
@@ -130,7 +118,6 @@ h2{
 }
 
 /* ............Footer.......... */
-/* ...........DETAILS IN CSS.......... */
 
 footer{
     text-align: center;
@@ -145,15 +132,30 @@ footer{
 }
 
 /* ............Media Quaries.......... */
+ /* .............Mobile Device............ */
 
     @media only screen and (max-width:688px){
         .container{
             width: 100%;
         }
-        .collection-type{
+        .collection-type {
             grid-template-columns: repeat(1, 1fr);
         }
-        .collection{
+        .collection {
             flex-direction: column;
     }
 }
+    /* .............Tablet Device........... */
+
+    @media only screen and (min-width:688px)and 
+    (max-width:992px) {
+        .container{
+        width: 100%;
+        }
+        .collection-type {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .collection {
+        flex-direction: column;
+        }
+    }
